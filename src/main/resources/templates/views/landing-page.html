@@ -2,15 +2,20 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head th:include="views/fragments :: head">
    <meta charset="UTF-8">
+
    <title>Guardian Premier Solutions</title>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
    <a class="navbar-brand" href="#">Guardian Premier Solutions</a>
-   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+   <button class="navbar-toggler" type="button" data-toggle="collapse"
+           data-target="#navbarTogglerDemo02"
+           aria-controls="navbarTogglerDemo02" aria-expanded="false"
+           aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
    </button>
 
+   <!--   navbar -->
    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
       <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
          <li class="nav-item active">
@@ -25,6 +30,50 @@
       </ul>
    </div>
 </nav>
+
+<!--jumbotron-->
+
+<div class="jumbotron jumbotron-fluid landing-header d-md-block d-none">
+   <div class="container">
+      <div class="row justify-content-center align-items-center">
+         <h1 class="col d-flex justify-content-end display-4 text-light">
+            "Together we perform better"</h1>
+      </div>
+   </div>
+</div>
+
+<!-- mission, focus, performance cards-->
+
+<div class="card-deck p-5">
+   <div class="card">
+      <div class="card-body">
+         <h5 class="card-title">GPS Mission</h5>
+         <img src="img/airport-architecture-building.jpg" class="card-img-top"
+              alt="airport">
+         <p class="card-text">This is a longer card with supporting text below
+            as a natural lead-in to additional content. This content is a little
+            bit longer.</p>
+      </div>
+   </div>
+   <div class="card">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+         <h5 class="card-title">Card title</h5>
+         <p class="card-text">This card has supporting text below as a natural
+            lead-in to additional content.</p>
+      </div>
+   </div>
+   <div class="card">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+         <h5 class="card-title">Card title</h5>
+         <p class="card-text">This is a wider card with supporting text below as
+            a natural lead-in to additional content. This card has even longer
+            content than the first to show that equal height action.</p>
+      </div>
+   </div>
+</div>
+
 
 <th:block th:include="views/fragments :: scripts"/>
 </body>
