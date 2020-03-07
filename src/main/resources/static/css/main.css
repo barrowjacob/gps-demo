@@ -16,3 +16,12 @@ body {
     background-color: #DDDDDD;
 }
 
+.landing-images {
+    max-height: 212px;
+    max-width: 366px;
+}
+.card {
+    box-shadow: 2px 2px 3px 1px darkgrey;
+    max-width: 25%;
+}
+
