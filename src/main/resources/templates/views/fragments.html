@@ -3,6 +3,7 @@
 <head th:fragment="head">
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <script src="https://kit.fontawesome.com/927b51fa66.js" crossorigin="anonymous"></script>
    <link rel="stylesheet"
          href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
@@ -11,8 +12,58 @@
 
 </head>
 <body>
+<nav th:fragment="navbar" class="navbar navbar-expand-lg navbar-light bg-white">
+   <a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo"></a>
+   <button class="navbar-toggler" type="button" data-toggle="collapse"
+           data-target="#navbarTogglerDemo02"
+           aria-controls="navbarTogglerDemo02" aria-expanded="false"
+           aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+   </button>
 
+   <!--   navbar -->
+   <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+         <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="#">Login</a>
+         </li>
+      </ul>
+   </div>
+</nav>
 
+<!-- Footer -->
+<footer th:fragment="footer" class="footer bg-light font-small mt-3">
+         <div class="w-100 pt-5 text-center">
+            <div class="mb-5r text-center">
+
+               <!-- Facebook -->
+               <a class="fb-ic" href="https://facebook.com">
+                  <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+               </a>
+               <!-- Twitter -->
+               <a class="tw-ic" href="https://twitter.com">
+                  <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+               </a>
+               <!--Linkedin -->
+               <a class="li-ic" href="https://linkedin.com">
+                  <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+               </a>
+               <div class="footer-copyright text-center py-3">© 2019 Copyright:
+                  <a href="https://gpscorps.com"> GPSCorps.com</a>
+               </div>
+            </div>
+         </div>
+
+   <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
 <th:block th:fragment="scripts">
    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"

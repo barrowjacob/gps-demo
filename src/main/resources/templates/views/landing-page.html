@@ -6,30 +6,7 @@
    <title>Guardian Premier Solutions</title>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-   <a class="navbar-brand" href="#">Guardian Premier Solutions</a>
-   <button class="navbar-toggler" type="button" data-toggle="collapse"
-           data-target="#navbarTogglerDemo02"
-           aria-controls="navbarTogglerDemo02" aria-expanded="false"
-           aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-   </button>
-
-   <!--   navbar -->
-   <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-      <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-         <li class="nav-item active">
-            <a class="nav-link" href="#">Home</a>
-         </li>
-         <li class="nav-item">
-            <a class="nav-link" href="#">About Us</a>
-         </li>
-         <li class="nav-item">
-            <a class="nav-link" href="#">Login</a>
-         </li>
-      </ul>
-   </div>
-</nav>
+<nav th:insert="views/fragments :: navbar"></nav>
 
 <!--jumbotron-->
 
@@ -41,57 +18,65 @@
       </div>
    </div>
 </div>
+<div class="jumbotron jumbotron-fluid landing-header d-block d-md-none" style="height: 5vh;">
+   <div class="container">
+      <div class="row justify-content-center align-items-center">
+         <h1 class="col d-flex justify-content-end display-4 text-light">
+            "Together we perform better"</h1>
+      </div>
+   </div>
+</div>
 
 <!-- mission, focus, performance cards-->
-<div class="row">
-   <div class="col">
-      <div class="card-deck p-5 justify-content-center">
-         <div class="card">
-            <div class="card-body ">
-               <h5 class="card-title">GPS Mission</h5>
-               <img src="img/human-body.png" class="card-img-top landing-images"
-                    alt="evolved human">
-               <p class="card-text">Our main goal is to advance the evolution of
-                  human
-                  performance.</p>
-               <p class="card-text">GPS exists to reduce human error through
-                  innovative methodologies and to improve real life outcomes for
-                  stressful occupations in any condition or environment.</p>
-            </div>
+<div class="container mt-3">
+   <div class="card-deck">
+      <div class="card">
+         <div class="card-body ">
+            <h5 class="card-title">GPS Mission</h5>
+            <img src="img/human-body.png" class="card-img-top img-fluid "
+                 alt="evolved human">
+            <p class="card-text">Our main goal is to advance the evolution of
+               human
+               performance.</p>
+            <p class="card-text">GPS exists to reduce human error through
+               innovative methodologies and to improve real life outcomes for
+               stressful occupations in any condition or environment.</p>
          </div>
-         <div class="card">
-            <div class="card-body">
-               <h5 class="card-title">GPS Focus Area</h5>
-               <img src="img/meeting.png" class="card-img-top landing-images"
-                    alt="meeting">
-               <p class="card-text">We provide human performance optimization
-                  training, education and research solutions.</p>
-               <p class="card-text">GPS customers benefit from our key focus
-                  areas and
-                  our ability to develop proactive processes to meet future
-                  demands.</p>
-            </div>
+      </div>
+      <div class="w-100 d-none d-sm-block d-md-none mb-4"></div>
+      <div class="card">
+         <div class="card-body">
+            <h5 class="card-title">GPS Focus Area</h5>
+            <img src="img/meeting.png" class="card-img-top landing-images"
+                 alt="meeting">
+            <p class="card-text">We provide human performance optimization
+               training, education and research solutions.</p>
+            <p class="card-text">GPS customers benefit from our key focus
+               areas and
+               our ability to develop proactive processes to meet future
+               demands.</p>
          </div>
-         <div class="card">
-            <div class="card-body">
-               <h5 class="card-title">GPS Performance</h5>
-               <img src="img/gears.png" class="card-img-top landing-images"
-                    alt="gears">
-               <p class="card-text">Our uniquely qualified past and current
-                  performance aligns with existing and emerging require-ments
-                  for
-                  human performance.</p>
-               <p class="card-text">GPS delivers best value products and
-                  services that
-                  are reliable, recent and relative.</p>
-            </div>
+      </div>
+      <div class="w-100 d-none d-sm-block d-md-none mb-4"></div>
+
+      <div class="card">
+         <div class="card-body">
+            <h5 class="card-title">GPS Performance</h5>
+            <img src="img/gears.png" class="card-img-top landing-images"
+                 alt="gears">
+            <p class="card-text">Our uniquely qualified past and current
+               performance aligns with existing and emerging require-ments
+               for
+               human performance.</p>
+            <p class="card-text">GPS delivers best value products and
+               services that
+               are reliable, recent and relative.</p>
          </div>
       </div>
    </div>
-
 </div>
 
-
+<footer th:insert="views/fragments :: footer"></footer>
 <th:block th:include="views/fragments :: scripts"/>
 </body>
 </html>
